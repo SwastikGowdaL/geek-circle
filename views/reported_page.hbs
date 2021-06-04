@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<!-- Primary Meta Tags -->
+<title>Geek Circle — Shrine of Geeks</title>
+<meta name="title" content="Geek\Circle — Shrine of Geeks">
+<meta name="description" content="In Geek\Circle you can post the blogs you always wanted to, for other users in our platform so that they can read them and react to it!">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="manifest" href="assets/img/site.webmanifest">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2A3F58;
+        overflow-y: hidden;
+    }
+
+</style>
+<link rel="stylesheet" href="assets/css/typography.css" />
+</head>
+<body>
+    
+
+<div style="width:100%;height:125vh;padding-bottom:100%;position:relative;padding-left:40%;"><iframe src="https://giphy.com/embed/3o6Zt7StAisetJ7ntC" width="25%" height="25%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+
+
+<script>
+
+Swal.fire(
+  'Sorry💔',
+  'You cannot post from now on due to excessive reports! 😿',
+  'error'
+)
+
+if (localStorage.getItem("theme") === "light") {
+  document.getElementsByTagName("body")[0].style.background = "#2A3F58";
+  document.getElementById("header").style.background = "#2A3F58";
+} else {
+  document.getElementsByTagName("body")[0].style.background = "black";
+  document.getElementById("header").style.background = "black";
+}
+
+</script>
+
+</body>
+</html>

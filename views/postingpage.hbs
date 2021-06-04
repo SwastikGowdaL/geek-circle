@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+   <!-- Primary Meta Tags -->
+<title>Geek Circle — Shrine of Geeks</title>
+<meta name="title" content="Geek\Circle — Shrine of Geeks">
+<meta name="description" content="In Geek\Circle you can post the blogs you always wanted to, for other users in our platform so that they can read them and react to it!">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="manifest" href="assets/img/site.webmanifest">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main Quill library -->
+    <script src="//cdn.quilljs.com/1.0.0/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.0.0/quill.min.js"></script>
+
+    <!-- Theme included stylesheets -->
+    <link href="//cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" />
+    <link href="//cdn.quilljs.com/1.0.0/quill.bubble.css" rel="stylesheet" />
+
+    <!--my css files-->
+    <link rel="stylesheet" href="assets/css/postingpage.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+  </head>
+
+  <body>
+    <div class="main-content">
+      <div class="progress-bar1">
+        <span class="dot dot1"></span>
+        <span class="line line1"></span>
+        <span class="dot dot2"></span>
+        <span class="line line2"></span>
+        <span class="dot dot3"></span>
+        <span class="line line3"></span>
+        <span class="dot dot4"></span>
+        <span class="line line4"></span>
+        <span class="dot dot5"></span>
+      </div>
+      <div class="title-content">
+        <textarea
+          class="form-control"
+          id="title"
+          placeholder="Title..."
+          rows="3"
+          onclick="title_input()"
+        ></textarea>
+      </div>
+
+      <div class="editor-content">
+        <div id="editor-container" oninput="update_testing_quill()"></div>
+      </div>
+      <div class="choosing">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="hashtags"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            style="background-color: white; color: black; margin-bottom: 6px"
+          >
+            Hashtags
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a
+              class="dropdown-item"
+              onclick="hashtag_select('technology')"
+              href="#"
+              >technology</a
+            >
+            <a class="dropdown-item" onclick="hashtag_select('geek')" href="#"
+              >geek</a
+            >
+            <a class="dropdown-item" onclick="hashtag_select('coding')" href="#"
+              >coding</a
+            >
+            <a class="dropdown-item" onclick="hashtag_select('design')" href="#"
+              >design</a
+            >
+            <a class="dropdown-item" onclick="hashtag_select('crypto')" href="#"
+              >crypto</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="hashtag_select('computer')"
+              href="#"
+              >computer</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="hashtag_select('internet')"
+              href="#"
+              >internet</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="hashtag_select('software')"
+              href="#"
+              >software</a
+            >
+          </div>
+          <span
+            class="badge badge-primary"
+            style="
+              font-size: 15px;
+              margin-left: 0.8rem;
+              margin-right: 0.2rem;
+              background-color: #5aaaff;
+            "
+            id="hashtag1"
+            >Hashtag 1</span
+          >
+          <span
+            class="badge badge-primary"
+            style="
+              font-size: 15px;
+              margin-right: 0.2rem;
+              background-color: #5aaaff;
+            "
+            id="hashtag2"
+            >Hashtag 2</span
+          >
+          <span
+            class="badge badge-primary"
+            style="font-size: 15px; background-color: #5aaaff"
+            id="hashtag3"
+            >Hashtag 3</span
+          >
+        </div>
+
+        <div>
+          <input type="file" id="myFile" name="filename" />
+        </div>
+      </div>
+      <div class="submit-btn">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-block"
+          id="publish"
+          style="background-color: #48c8f5; color: black"
+        >
+          Publish <i class="bx bxs-rocket"></i>
+        </button>
+      </div>
+
+      <div class="preview">
+        Preview
+
+        <label class="switch">
+          <input type="checkbox" id="switch" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div
+        id="testing_quill"
+        class="testing_quill"
+        style="margin-right: 2%; margin-top: 1%; margin-bottom: 2%"
+      ></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/postingpage.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

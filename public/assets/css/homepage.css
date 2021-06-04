@@ -1,0 +1,93 @@
+section{
+    padding:20px 0px ;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:#48C8F5;    /* color of the scroll thumb */
+    border-radius: 6px;       /* roundness of the scroll thumb */
+    border: 2px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+
+
+  #editor {
+    content-visibility: hidden;
+    visibility: hidden;
+}
+
+.ql-toolbar {
+    content-visibility: hidden !important;
+    visibility: hidden !important;
+}
+
+
+
+
+.post-ana .bx {
+    cursor: pointer;
+}
+
+.my-nav .bx {
+    cursor: pointer;
+}
+
+.bell-icon::before {
+    pointer-events: none;
+}
+
+.loader-for-posts{
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+  .content-1 {
+    display: block;
+  }
+
+@media screen and (max-width: 1198px) {
+  header {
+    border: 1px solid white;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .content-2-opt p i {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .post-img img{
+        width: 270px;
+    }
+    #post-img::before{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post-content-top{
+        flex-wrap: wrap;
+    }
+}
+
+/* @media screen and (min-width: 768px) and (max-width:991px) {
+    #post-img::before{
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1231px) {
+    #post-img::before{
+        margin-top: 15px;
+    }
+} */

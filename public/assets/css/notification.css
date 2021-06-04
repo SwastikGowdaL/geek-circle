@@ -1,0 +1,177 @@
+section {
+    padding: 20px 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #48C8F5;
+    /* color of the scroll thumb */
+    border-radius: 6px;
+    /* roundness of the scroll thumb */
+    border: 2px solid rgb(255, 255, 255);
+    /* creates padding around scroll thumb */
+}
+
+
+#editor {
+    content-visibility: hidden;
+    visibility: hidden;
+}
+
+.ql-toolbar {
+    content-visibility: hidden !important;
+    visibility: hidden !important;
+}
+
+
+.post-ana .bx {
+    cursor: pointer;
+}
+
+.my-nav .bx {
+    cursor: pointer;
+}
+
+.bell-icon::before {
+    pointer-events: none;
+}
+
+.loader-for-posts {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.content-1 {
+    display: block;
+}
+
+
+.notification-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1E2D3E;
+    padding: 1.5%;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    margin-bottom: 0.9rem;
+}
+
+.notification-user-pic {
+    display: flex;
+}
+
+.notification-msg {
+    display: flex;
+    color: white;
+    font-size: 1.75rem;
+    text-align: center;
+    align-items: center;
+}
+
+.notification-pic {
+    display: flex;
+}
+
+.clear{
+    display: flex;
+    max-width: 1000px;
+    flex-direction: row-reverse;
+    margin: 1rem;
+}
+
+.btn-outline-primary{
+    margin-top: 1rem;
+    margin-right:0.5rem;
+    color: #48C8F5;
+}
+
+.btn-outline-primary:hover{
+background-color: #48C8F5;
+color: white;
+
+}
+
+#notification-user-pic {
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+#notification-pic {
+    border: 2px solid white;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1198px) {
+    header {
+        border: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .content-2-opt p i {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .post-img img {
+        width: 270px;
+    }
+
+    #post-img::before {
+        width: 270px;
+    }
+
+    #notification-user-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    #notification-pic {
+        width: 40px;
+        height: 40px;
+    }
+    .notification-msg {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post-content-top {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .btn-outline-primary{
+        margin-right:0;
+    }
+
+}
+
+
+/* @media screen and (min-width: 768px) and (max-width:991px) {
+    #post-img::before{
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1231px) {
+    #post-img::before{
+        margin-top: 15px;
+    }
+} */

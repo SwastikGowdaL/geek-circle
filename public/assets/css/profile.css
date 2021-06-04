@@ -1,0 +1,236 @@
+section {
+    padding: 20px 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #48C8F5;
+    /* color of the scroll thumb */
+    border-radius: 6px;
+    /* roundness of the scroll thumb */
+    border: 2px solid rgb(255, 255, 255);
+    /* creates padding around scroll thumb */
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-bottom: 22px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.profile-top-content {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url("https://www.bookbell.in/wp-content/uploads/2018/08/sea-01.jpg");
+    padding-top: 185px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    /* border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px; */
+    flex-wrap: wrap;
+    padding: 12px;
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 1rem;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+#user_avatar {
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.profile-details .profile-img {
+    padding: 10px;
+    color: white;
+}
+
+#user_name {
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 0px;
+}
+
+#user_tagline {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.profile-bottom-content .bx {
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 1.2rem;
+    opacity: 80%;
+    padding-right: 5px;
+}
+
+.profile-bottom-content div {
+    opacity: 95%;
+}
+
+.profile_cover_edit {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+}
+
+.profile_cover_edit_icon {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 8px;
+}
+
+.profile_cover_edit_icon .bx {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#ed_profile_pic {
+    cursor: pointer;
+}
+
+#user_name_edit {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#user_tagline_edit {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#ed_email,
+#ed_password,
+#ed_hashtags {
+    cursor: pointer;
+}
+
+input[type="email"] {
+    background-color: #323234;
+}
+
+input[type="password"] {
+    background-color: #323234;
+}
+
+#editor {
+    content-visibility: hidden;
+    visibility: hidden;
+}
+
+.ql-toolbar {
+    content-visibility: hidden !important;
+    visibility: hidden !important;
+}
+
+
+
+
+.post-ana .bx {
+    cursor: pointer;
+}
+
+.my-nav .bx {
+    cursor: pointer;
+}
+
+.bell-icon::before {
+    pointer-events: none;
+}
+
+.content-1 {
+    display: block;
+  }
+
+@media screen and (max-width: 1198px) {
+    header {
+        border: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .content-2-opt p i {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .post-img img {
+        width: 270px;
+    }
+
+    #post-img::before {
+        width: 270px;
+    }
+
+    .profile-bottom-content {
+        font-size: 0.9rem;
+    }
+
+    .profile-bottom-content .bx {
+        font-size: 0.9rem;
+    }
+
+
+    .profile-name {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .post-content-top {
+        flex-wrap: wrap;
+    }
+}
+
+/* @media screen and (min-width: 768px) and (max-width:991px) {
+    #post-img::before{
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1231px) {
+    #post-img::before{
+        margin-top: 15px;
+    }
+} */

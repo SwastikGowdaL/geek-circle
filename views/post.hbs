@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <!-- Primary Meta Tags -->
+  <title>Geek Circle — Shrine of Geeks</title>
+  <meta name="title" content="Geek\Circle — Shrine of Geeks">
+  <meta name="description"
+    content="In Geek\Circle you can post the blogs you always wanted to, for other users in our platform so that they can read them and react to it!">
+
+  <!-- Meta Tags Generated via http://heymeta.com -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+  <link rel="manifest" href="assets/img/site.webmanifest" />
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+  <a href="https://icons8.com/icon/40670/c-programming"></a>
+
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- Main Quill library -->
+  <script src="//cdn.quilljs.com/1.0.0/quill.js"></script>
+  <script src="//cdn.quilljs.com/1.0.0/quill.min.js"></script>
+
+  <!-- Theme included stylesheets -->
+  <link href="//cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" />
+  <link href="//cdn.quilljs.com/1.0.0/quill.bubble.css" rel="stylesheet" />
+
+
+
+
+  <!--my css files-->
+  <link rel="stylesheet" href="assets/css/typography.css" />
+  <link rel="stylesheet" href="assets/css/post.css" />
+
+
+
+
+
+
+</head>
+
+<body id="home" class="homepage-body">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" id="sidebar-btn" class="mobile-nav-toggle d-xl-none">
+    <i class="icofont-navigation-menu"></i>
+  </button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="assets/img/logo.png" alt="" class="img-fluid" />
+        <h1 style="text-align: center" class="text-light">
+          <a href="http://localhost:3000/homepage" class="geekcircle">Geek\Circle</a>
+        </h1>
+
+
+
+      </div>
+      <nav class="nav-menu my-nav">
+
+        <ul>
+          <li>
+            <a href=""><button type="button" class="btn btn-light write">✏️ Write</button></a>
+          </li>
+          <li>
+            <a href="#" style="margin-top:27%;padding-left:110px;"><span class="home"><i class='bx bxs-binoculars'></i>
+                <span id="views">10</span></span></a>
+          </li>
+          <li>
+            <a href="#" style="padding-left:110px;"><span class="bookmark"><i class='bx bxs-like' id="liked_color"></i>
+                <span id="likes">44</span></span></a>
+          </li>
+          <li>
+            <a href="#" style="padding-left:110px;"><span class="profile"><i class='bx bxs-bookmark'
+                  id="bookmarked_color"></i> <span id="bookmark">23</span></span></a>
+          </li>
+          <li>
+            <a href="#" style="padding-left:110px;"><span class="profile"><i class='bx bxs-share-alt'
+                  id="share_post"></i> <span id="shares">23</span></span></a>
+          </li>
+          <li>
+            <a href="#" style="padding-left:120px;"><span class="profile"><i class='bx bxs-flag' id="reports"></i>
+              </span></a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
+    <!-- .nav-menu -->
+    <button type="button" class="mobile-nav-toggle d-xl-none">
+      <i class="icofont-navigation-menu"></i>
+    </button>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <!-- my code goes here -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+
+
+        <div class="post-content-pic">
+          <img id="post-pic" src="https://github.githubassets.com/images/modules/site/social-cards/github-social.png"
+            alt="post pic" width="100%" height="400">
+        </div>
+
+        <div class="post-contents">
+          <div class="post-title">
+            10 GitHub Repositories every Developer should know at any cost know at any cost Developer should !
+          </div>
+          <div class="hashtags-content">
+            <span class="badge badge-primary" style="margin-right: 10px;" id="hashtag1">technology</span>
+            <span class="badge badge-primary" style="margin-right: 10px;" id="hashtag2">geek</span>
+            <span class="badge badge-primary" id="hashtag3">coding</span>
+          </div>
+          <div class="post-details">
+            <div class="post-auth-pic">
+              <img
+                src="https://www.irishtimes.com/polopoly_fs/1.2473777.1450703313!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg"
+                class="rounded-circle" alt="publisher pic" width="75" height="75"
+                style="border:2px solid white;object-fit:cover;" id="auth-pic">
+            </div>
+            <div class="post-auth-details">
+              <div class="post-auth-name">
+                Allison Brie
+              </div>
+              <div class="post-auth-date">
+                31-05-2021
+              </div>
+            </div>
+          </div>
+
+<div class="listen">Listen to this article</div>
+
+          <div class="player">
+            <div id="audio_player">
+              <i class='bx bx-play-circle' class="play-button"></i>
+            </div>
+            <div class="audio-waves">
+              <div class="loader-container">
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-1"></div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="post-body2" id="post-body2">
+            <div id="post_body" style="font-size: 1.5rem;color: white;">
+
+            </div>
+          </div>
+          <hr class="comments-seperator">
+
+          <div class="discussion">Discussion</div>
+
+          <div class="comments">
+            <div class="commenter-pic">
+              <img class="rounded-circle"
+                src="https://www.irishtimes.com/polopoly_fs/1.2473777.1450703313!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg"
+                width="50" height="50" alt="comment1" id="user_comment_pic">
+            </div>
+            <div class="comment_from_peeps">
+              <textarea class="form-control" rows="3" placeholder="comment..."
+                style="background-color: rgba(50, 63, 79, 0.8);margin-left:10px;color:white;font-size:22px;"
+                id="user_comment"></textarea>
+            </div>
+          </div>
+
+          <div class="people-comments">
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/post.js"></script>
+
+  <script>
+
+    var user_id = localStorage.getItem("id");
+    console.log(user_id);
+    var post_like = 0;
+    var post_bookmark = 0;
+    var delta = {{{ body }}};
+    post_body.setContents(delta);
+    var id = "{{id}}";
+    console.log(id);
+    console.log(delta);
+    var likes = "{{likes}}";
+    var views = "{{views}}";
+    var bookmarks = "{{bookmarks}}";
+    var hashtags = "{{hashtags}}";
+    var title = "{{title}}";
+    var publisher = "{{publisher}}";
+    var published_date = "{{published_date}}";
+    var shares = "{{shares}}";
+    var reports = "{{reports}}";
+    reports = Number(reports);
+    console.log(hashtags);
+    console.log(likes);
+    document.getElementById("views").innerText = views;
+    document.getElementById("likes").innerText = likes;
+    document.getElementById("bookmark").innerText = bookmarks;
+    document.getElementById("shares").innerText = shares;
+    console.log(title);
+    console.log(published_date);
+    var correct_date = published_date.split(" ");
+    var correct_date1 = [];
+    correct_date1.push(correct_date[1]);
+    correct_date1.push(correct_date[2]);
+    correct_date1.push(correct_date[3]);
+    var tot_hashtags = hashtags.split(",");
+    var liked_color = document.getElementById("liked_color");
+    var bookmarked_color = document.getElementById("bookmarked_color");
+    var share_post = document.getElementById("share_post");
+    var report_post = document.getElementById("reports");
+    var user_comment_pic = document.getElementById("user_comment_pic");
+    var user_name;
+
+
+    function req_that_details(path) {
+      return new Promise(function (resolve, reject) {
+        axios
+          .post(path, {
+            id: user_id,
+          })
+          .then((response) => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+
+    request_for_details();
+    async function request_for_details() {
+      const res = await req_that_details("http://127.0.0.1:3000/user/name");
+      user_name = res.name;
+    }
+
+    function makeGetRequest(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: publisher
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function req_for_liked(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id,
+          user_id: user_id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+    function req_for_bookmarked(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id,
+          user_id: user_id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    publisher_name();
+    whether_postLiked();
+    whether_postBookmarked();
+
+    async function publisher_name() {
+      try {
+        const result = await makeGetRequest("http://127.0.0.1:3000/user/name");
+        console.log(result);
+        document.getElementsByClassName("post-auth-name")[0].innerText = result.name;
+        document.getElementById("auth-pic").setAttribute("src", `http://127.0.0.1:3000/avatar/${result._id}`);
+      } catch (e) {
+        alert("something went wrong");
+      }
+    }
+
+    async function whether_postLiked() {
+      try {
+        const res = await req_for_liked("http://127.0.0.1:3000/post/liked_check");
+        console.log(res.liked);
+        if (res.liked === 0) {
+          post_like = 1;
+        } else {
+          document.getElementById("liked_color").style.color = "#48C8F5";
+        }
+      } catch (e) {
+        alert("something went wrong while fetching liked details");
+      }
+    }
+
+    async function whether_postBookmarked() {
+      try {
+        const res = await req_for_bookmarked("http://127.0.0.1:3000/post/bookmarked_check");
+        console.log("bookmarked");
+        console.log(res.bookmarked);
+        if (res.bookmarked === 0) {
+          post_bookmark = 1;
+        } else {
+          document.getElementById("bookmarked_color").style.color = "#48C8F5";
+        }
+      } catch (e) {
+        alert("something went wrong while fetching bookmarked details");
+      }
+    }
+
+    console.log(reports);
+    if (reports === 0) {
+      document.getElementById("reports").style.color = "#8DE885";
+    } else if (reports <= 10) {
+      document.getElementById("reports").style.color = "#ECE289";
+    } else {
+      document.getElementById("reports").style.color = "#E76F6F";
+      report_user();
+    }
+
+
+    async function report_user() {
+      const res = await req_to_report_user("http://127.0.0.1:3000/user/reported");
+    }
+
+
+    function req_to_report_user(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: publisher
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function like_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id,
+          user_id: user_id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function msg_like_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: publisher,
+          user_id: user_id,
+          post_id: id,
+          activity: "liked",
+          user_name: user_name
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function bookmark_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id,
+          user_id: user_id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+    function msg_bookmark_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: publisher,
+          user_id: user_id,
+          post_id: id,
+          activity: "bookmarked",
+          user_name: user_name
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+    function report_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function msg_report_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: publisher,
+          user_id: user_id,
+          post_id: id,
+          activity: "reported",
+          user_name: user_name
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function post_shared(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+    function make_that_comment(path, u_comment) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id,
+          commenter_id: user_id,
+          comment: u_comment
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function msg_comment_that_post(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: publisher,
+          user_id: user_id,
+          post_id: id,
+          activity: "commented",
+          user_name: user_name
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    function commented_increase(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id,
+          user_id: user_id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+    function update_that_comments(path) {
+      return new Promise(function (resolve, reject) {
+        axios.post(path, {
+          id: id
+        })
+          .then(response => {
+            var result = response.data;
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    }
+
+
+    liked_color.addEventListener("click", like_post);
+
+    async function like_post() {
+      if (post_like) {
+        try {
+          const res = await like_that_post("http://127.0.0.1:3000/post/liked");
+          const res1 = await msg_like_that_post("http://127.0.0.1:3000/post/message");
+          document.getElementById("liked_color").style.color = "#48C8F5";
+          Swal.fire({
+            position: 'bottom-end',
+            title: '👍 Liked!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          document.getElementById("likes").innerText = Number(likes) + 1;
+        } catch (e) {
+          alert("error while liking the post");
+        }
+      }
+    }
+
+    bookmarked_color.addEventListener("click", bookmark_post);
+
+    async function bookmark_post() {
+      if (post_bookmark) {
+        try {
+          const res = await bookmark_that_post("http://127.0.0.1:3000/post/bookmarked");
+          const res1 = await msg_bookmark_that_post("http://127.0.0.1:3000/post/message");
+          document.getElementById("bookmarked_color").style.color = "#48C8F5";
+          Swal.fire({
+            position: 'bottom-end',
+            title: '🔖 Bookmarked!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          document.getElementById("bookmark").innerText = Number(bookmarks) + 1;
+        } catch (e) {
+          alert("error while bookmarking the post");
+        }
+      }
+    }
+
+    function copyToClp(txt) {
+      var m = document;
+      txt = m.createTextNode(txt);
+      var w = window;
+      var b = m.body;
+      b.appendChild(txt);
+      if (b.createTextRange) {
+        var d = b.createTextRange();
+        d.moveToElementText(txt);
+        d.select();
+        m.execCommand('copy');
+      }
+      else {
+        var d = m.createRange();
+        var g = w.getSelection;
+        d.selectNodeContents(txt);
+        g().removeAllRanges();
+        g().addRange(d);
+        m.execCommand('copy');
+        g().removeAllRanges();
+      }
+      txt.remove();
+    }
+
+
+    share_post.addEventListener("click", copy_post);
+
+    async function copy_post() {
+      copyToClp(`http://localhost:3000/posts?post_id=${id}`);
+      Swal.fire({
+        position: 'bottom-end',
+        title: '📋 Copied!',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      var temp = document.getElementById("shares").innerText;
+      document.getElementById("shares").innerText = Number(temp) + 1;
+      const res = await post_shared("http://127.0.0.1:3000/post/shares");
+      console.log("shares");
+      console.log(res);
+
+    }
+
+    report_post.addEventListener("click", post_report);
+
+    async function post_report() {
+
+      try {
+        const res = await report_that_post("http://127.0.0.1:3000/post/report")
+        const res1 = await msg_report_that_post("http://127.0.0.1:3000/post/message");
+        Swal.fire({
+          position: 'bottom-end',
+          title: '🏴 Reported!',
+          showConfirmButton: false,
+          timer: 1500
+        })
+      } catch (e) {
+        alert("something went  wrong while reporting");
+      }
+    }
+
+
+    document.addEventListener("keydown", async function (event) {
+
+      if (event.keyCode === 13 && document.getElementById("user_comment").value !== "") {
+        var u_comment = document.getElementById("user_comment").value;
+        u_comment = u_comment.trim();
+        try {
+          res = await make_that_comment("http://127.0.0.1:3000/post/commentsUpdate", u_comment);
+          res1 = await commented_increase("http://127.0.0.1:3000/post/commented");
+          const res2 = await msg_comment_that_post("http://127.0.0.1:3000/post/message");
+          Swal.fire({
+            position: 'bottom-end',
+            title: '✍ Commented!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+
+          var div1 = document.createElement("div");
+          div1.setAttribute("class", "post-comments");
+
+          var div2 = document.createElement("div");
+          div2.setAttribute("class", "commenter-pic");
+          div1.appendChild(div2);
+
+          var img1 = document.createElement("img");
+          img1.setAttribute("class", "rounded-circle");
+          img1.setAttribute("src", `http://127.0.0.1:3000/avatar/${user_id}`);
+          img1.setAttribute("width", "50");
+          img1.setAttribute("height", "50");
+          div2.appendChild(img1);
+
+          var div3 = document.createElement("div");
+          div3.setAttribute("class", "post-comment");
+          div3.innerText = u_comment;
+          div1.appendChild(div3);
+
+
+          document.getElementsByClassName("people-comments")[0].appendChild(div1);
+
+
+        } catch (e) {
+          alert("error while saving comment");
+        }
+      }
+
+    });
+
+
+    comments_update();
+
+    async function comments_update() {
+      try {
+        const res = await update_that_comments("http://127.0.0.1:3000/post/capture_comments");
+        console.log(res);
+
+        for (let i = 0; i < res.length; i++) {
+
+          var div1 = document.createElement("div");
+          div1.setAttribute("class", "post-comments");
+
+          var div2 = document.createElement("div");
+          div2.setAttribute("class", "commenter-pic");
+          div1.appendChild(div2);
+
+          var img1 = document.createElement("img");
+          img1.setAttribute("class", "rounded-circle");
+          img1.setAttribute("src", `http://127.0.0.1:3000/avatar/${res[i].commenter_id}`);
+          img1.setAttribute("width", "50");
+          img1.setAttribute("height", "50");
+          div2.appendChild(img1);
+
+          var div3 = document.createElement("div");
+          div3.setAttribute("class", "post-comment");
+          div3.innerText = res[i].comment;
+          div1.appendChild(div3);
+
+
+          document.getElementsByClassName("people-comments")[0].appendChild(div1);
+
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    }
+
+
+    user_comment_pic.setAttribute("src", `http://127.0.0.1:3000/avatar/${user_id}`);
+
+    document.getElementById("hashtag1").innerText = tot_hashtags[0];
+    document.getElementById("hashtag2").innerText = tot_hashtags[1];
+    document.getElementById("hashtag3").innerText = tot_hashtags[2];
+    document.getElementsByClassName("post-title")[0].innerText = title;
+    document.getElementsByClassName("post-auth-date")[0].innerText = correct_date1.join("-");
+    var src = `http://127.0.0.1:3000/post/${id}`;
+    document.getElementById("post-pic").setAttribute("src", src);
+
+  </script>
+
+
+</body>
+
+</html>

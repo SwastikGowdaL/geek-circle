@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+<!-- Primary Meta Tags -->
+<title>Geek Circle — Shrine of Geeks</title>
+<meta name="title" content="Geek\Circle — Shrine of Geeks">
+<meta name="description" content="In Geek\Circle you can post the blogs you always wanted to, for other users in our platform so that they can read them and react to it!">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/site.webmanifest" />
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+
+
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- Main Quill library -->
+    <script src="//cdn.quilljs.com/1.0.0/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.0.0/quill.min.js"></script>
+
+    <!-- Theme included stylesheets -->
+    <link href="//cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.0.0/quill.bubble.css" rel="stylesheet">
+
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!--my css files-->
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+</head>
+
+<body id="home" class="homepage-body">
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button type="button" id="sidebar-btn" class="mobile-nav-toggle d-xl-none">
+        <i class="icofont-navigation-menu"></i>
+    </button>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="assets/img/logo.png" alt="" class="img-fluid" />
+                <h1 style="text-align: center" class="text-light">
+                    <a href="http://localhost:3000/homepage" class="geekcircle">Geek\Circle</a>
+                </h1>
+
+
+
+            </div>
+            <nav class="nav-menu my-nav">
+
+                <ul>
+                    <li>
+                        <a href="http://localhost:3000/postingpage"><button type="button" class="btn btn-light write">✏️ Write</button></a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/homepage" style="margin-top:27%;"><span class="home" style="border-bottom: none;"><i
+                                    class="bx bxs-home"></i> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/profile" class="bk_click"><span class="bookmark"><i class='bx bxs-bookmark'></i> Bookmark</span></a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/profile"><span class="profile" style="border-bottom: 2px solid white;"><i
+                                    class='bx bxs-user'></i> Profile</span></a>
+                    </li>
+                    <li>
+                        <a href="#" style="margin-top:25%;padding-left:110px;" id="theme"><i class='bx bxs-moon'></i></a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/notification" class="bell-icon" style="padding-left:110px;"><i class='bx bxs-bell'></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="flag-icon" style="padding-left:110px;"><i class='bx bxs-flag-alt' id="reports"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- .nav-menu -->
+        <button type="button" class="mobile-nav-toggle d-xl-none">
+            <i class="icofont-navigation-menu"></i>
+        </button>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- my code goes here -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="profile-content">
+                    <div class="profile-top-content" id="profile-top-content">
+                        <div class="profile-details">
+                            <div class="profile-img">
+                                <img src="https://i.redd.it/d1859b9x8dx21.jpg" alt="user pic" id="user_avatar"
+                                    width="125" height="100">
+                            </div>
+                            <div class="profile-name">
+                                <div id="user_tagline">smiling nerd</div>
+                                <div id="user_name">Allison Brie</div>
+                            </div>
+                            <div class="profile_cover_edit">
+                                <div class="profile_cover_edit_icon">
+                                    <i class='bx bxs-pencil' id="profile_cover_edit_icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-bottom-content">
+                        <div class="ed_profile_pic">
+                            <i class='bx bxs-pencil' id="ed_profile_pic"></i>Profile Pic
+                        </div>
+                        <div class="ed_email">
+                            <i class='bx bxs-pencil' id="ed_email"></i>Email
+                        </div>
+                        <div class="ed_password">
+                            <i class='bx bxs-pencil' id="ed_password"></i>Password
+                        </div>
+                        <div class="ed_hashtags">
+                            <i class='bx bxs-pencil' id="ed_hashtags"></i>Hashtags
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="top-content">
+
+                    <div class="content-1">Thanks for spending some quality time with us&nbsp;<span
+                            id="user_msg_name">Alexa</span> 😊</div>
+                    <div class="content-2">
+
+                        <div class="content-2-opt">
+                            <p><i class='bx bxs-pencil' id="ricon-1"></i></p>
+                            <p class="icon-title" id="icon-1">Published (<span id="pb_count"></span>)</p>
+                        </div>
+
+                        <div class="content-2-opt">
+                            <p><i class='bx bxs-like' id="ricon-2"></i></p>
+                            <p class="icon-title" id="icon-2">Liked (<span id="like_count"></span>)</p>
+                        </div>
+
+                        <div class="content-2-opt">
+                            <p><i class='bx bxs-comment-detail' id="ricon-3"></i></p>
+                            <p class="icon-title" id="icon-3">Commented (<span id="comment_count"></span>)</p>
+                        </div>
+
+                        <div class="content-2-opt">
+                            <p><i class='bx bxs-bookmarks' id="ricon-4"></i></p>
+                            <p class="icon-title" id="icon-4">Bookmarked (<span id="bk_count"></span>)</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="main-content">
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <div id="editor"></div>
+
+
+        </section>
+    </main>
+
+
+
+
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

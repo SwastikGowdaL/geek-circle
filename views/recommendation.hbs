@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+   <!-- Primary Meta Tags -->
+<title>Geek Circle — Shrine of Geeks</title>
+<meta name="title" content="Geek\Circle — Shrine of Geeks">
+<meta name="description" content="In Geek\Circle you can post the blogs you always wanted to, for other users in our platform so that they can read them and react to it!">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="manifest" href="assets/img/site.webmanifest">
+<link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--my css files-->
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/recommendation.css" />
+  </head>
+
+  <body>
+    <div class="master-flex">
+      <div class="main-content1">
+        <p>#Hashtag Recommendation</p>
+      </div>
+      <div class="main-content2">
+        <p>Here are some ✨interesting hashtags to follow.</p>
+      </div>
+
+      <div
+        class="main-content3"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+      >
+        <div class="card" id="card_1">
+          <center>
+            <img
+              src="https://media.istockphoto.com/vectors/programming-code-application-window-vector-id1124838925?k=6&m=1124838925&s=612x612&w=0&h=TbuwIMLPlZxN9jbuTcJanRwX33tkgNF7_PiIPvpPVm4="
+              width="60%"
+              id="rem_1"
+              onclick="toggle_rem('coding','rem_1')"
+            />
+            <p>Coding</p>
+          </center>
+        </div>
+        <div class="card" id="card_2">
+          <center>
+            <img
+              src="https://cdn.dribbble.com/users/1889436/screenshots/14562867/media/20d624ef09c009adf3060aa19a1d8391.png?compress=1&resize=400x300"
+              width="60%"
+              id="rem_2"
+              onclick="toggle_rem('technology','rem_2')"
+            />
+            <p>Technology</p>
+          </center>
+        </div>
+        <div class="card" id="card_3">
+          <center>
+            <img
+              src="https://pbs.twimg.com/profile_images/1367354127081107456/cQb2u45Z_400x400.jpg"
+              width="60%"
+              id="rem_3"
+              onclick="toggle_rem('geek','rem_3')"
+            />
+            <p>Geek</p>
+          </center>
+        </div>
+        <div class="card" id="card_4">
+          <center>
+            <img
+              src="https://previews.123rf.com/images/skypicsstudio/skypicsstudio1903/skypicsstudio190300242/124490095-vector-illustration-of-graphic-designer-team-computer-drawing-tools-and-accessories-design-studio-or.jpg"
+              width="60%"
+              id="rem_4"
+              onclick="toggle_rem('computer','rem_4')"
+            />
+            <p>Computer</p>
+          </center>
+        </div>
+      </div>
+
+      <div
+        class="main-content3"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+      >
+        <div class="card" id="card_5">
+          <center>
+            <img
+              src="https://image.freepik.com/free-vector/bitcon-cryptocurrency-illustration-blockchain-bit-coin-mining-farm_33099-334.jpg"
+              width="60%"
+              id="rem_5"
+              onclick="toggle_rem('crypto','rem_5')"
+            />
+            <p>Crypto</p>
+          </center>
+        </div>
+        <div class="card" id="card_6">
+          <center>
+            <img
+              src="https://miro.medium.com/max/5000/1*Dpb3vjQtqb4D1nAU4RnRWA@2x.png"
+              width="60%"
+              id="rem_6"
+              onclick="toggle_rem('design','rem_6')"
+            />
+            <p>Design</p>
+          </center>
+        </div>
+        <div class="card" id="card_7">
+          <center>
+            <img
+              src="https://i.pinimg.com/originals/70/c9/36/70c936d8dabb4562ad03d6906a454bd0.jpg"
+              width="60%"
+              id="rem_7"
+              onclick="toggle_rem('internet','rem_7')"
+            />
+            <p>Internet</p>
+          </center>
+        </div>
+        <div class="card" id="card_8">
+          <center>
+            <img
+              src="https://media.itpro.co.uk/image/upload/v1570816546/itpro/2019/02/software_shutterstock_1290773869.jpg"
+              width="60%"
+              id="rem_8"
+              onclick="toggle_rem('software','rem_8')"
+            />
+            <p>Software</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="main-content4">
+        <button class="btn-grad">Next 🡪</button>
+      </div>
+    </div>
+
+    <script src="assets/js/recommendation.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: roboto;
+  src: url("Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url("Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+.landing-page-title {
+  font-family: roboto-bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: roboto-bold;
+}
+
+.geekcircle {
+  font-family: roboto-bold;
+}
+.login-txt1 {
+  margin-top: 32px;
+  font-family: roboto;
+  font-size: 28px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.76);
+}
+.login-txt2 {
+  font-family: roboto;
+  font-size: 28px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.76);
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: roboto;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+input[type="email"] {
+  font-family: roboto !important;
+  background: rgba(255, 255, 255, 0.81);
+  font-size: 20px;
+}
+input[type="email"]::selection {
+  color: rgba(0, 0, 0, 0.648);
+  background-color: #48c8f5;
+}
+
+input[type="password"] {
+  font-family: roboto !important;
+  background: rgba(255, 255, 255, 0.81);
+  font-size: 20px;
+}
+input[type="password"]::selection {
+  color: rgba(0, 0, 0, 0.648);
+  background-color: #48c8f5;
+}
+
+input {
+  caret-color: rgb(9, 30, 61);
+}
+
+input:focus,
+input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.form-control {
+  border: none;
+}
+
+.login-btn {
+  margin-top: 20px;
+  font-family: roboto-bold;
+}
+
+.main-content1 {
+  font-family: roboto-bold;
+}
+.main-content2 {
+  font-family: roboto;
+}
+
+.card p {
+  font-family: roboto;
+}
+.btn-grad{
+    font-family: roboto-bold;
+}
+.err-txt{
+  font-family: roboto;
+}
+
+.write{
+  font-family: roboto-bold;
+}
+
+body{
+  font-family: roboto;
+}
+
+.top-content{
+  font-family: roboto-bold;
+}
+
+.content-2-opt p{
+  font-family: roboto;
+}
+
+.post-d2{
+  font-family: roboto-bold;
+}
+
+#title::placeholder{
+  font-family: roboto-bold;
+}
+
+.btn-block {
+  font-family: 'roboto-bold';
+}
+.post-title , .discussion{
+  font-family: 'roboto-bold';
+}
+
