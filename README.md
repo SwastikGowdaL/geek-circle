@@ -8,13 +8,6 @@ This Project is brought to you by [Swastik](https://swastikgowdal.github.io/Swas
 
 Geek Circle is an online blogging website for geeks to post blogs just like medium, dev and etc..,
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-
 ## Quick start
 
 * Clone the repo: git clone https://github.com/SwastikGowdaL/geek-circle.git
