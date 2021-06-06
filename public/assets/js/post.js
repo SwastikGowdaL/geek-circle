@@ -26,6 +26,7 @@ document.getElementById("audio_player").addEventListener("click", () => {
     r.style.setProperty("--re", "#3DD1DB");
     r.style.setProperty("--pi", "#4FDBD4");
     r.style.setProperty("--pu", "#58F5ED");
+    document.getElementById("audio_player").innerHTML="<i class='bx bx-pause-circle' class='play-button'></i>";
     audio = 1;
   } else if (audio === 1) {
     window.speechSynthesis.pause();
@@ -35,6 +36,7 @@ document.getElementById("audio_player").addEventListener("click", () => {
     r.style.setProperty("--re", "black");
     r.style.setProperty("--pi", "black");
     r.style.setProperty("--pu", "black");
+    document.getElementById("audio_player").innerHTML="<i class='bx bx-play-circle' class='play-button'></i>"
     audio = 2;
   } else if (audio === 2) {
     window.speechSynthesis.resume();
@@ -44,6 +46,7 @@ document.getElementById("audio_player").addEventListener("click", () => {
     r.style.setProperty("--re", "#3DD1DB");
     r.style.setProperty("--pi", "#4FDBD4");
     r.style.setProperty("--pu", "#58F5ED");
+    document.getElementById("audio_player").innerHTML="<i class='bx bx-pause-circle' class='play-button'></i>";
     audio = 1;
   }
 });

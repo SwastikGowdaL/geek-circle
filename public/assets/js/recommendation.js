@@ -69,6 +69,11 @@ async function next() {
         'You changed the hashtags!',
         'success'
       )
+
+      setTimeout(()=>{
+        window.location.href="http://localhost:3000/homepage";
+      },4000);
+
     } catch (e) {
       Swal.fire({
         icon: "error",

@@ -111,7 +111,7 @@ try{
    var result = await makeGetRequest2('http://127.0.0.1:3000/users/login');
    localStorage.setItem("id", result._id);
    console.log(result._id); 
-    alert("working");
+   window.location.href="http://localhost:3000/homepage";
 }catch(e){
     Swal.fire({
         icon: 'error',
