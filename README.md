@@ -1,7 +1,5 @@
 ![](https://github.com/SwastikGowdaL/geek-circle/blob/main/public/assets/img/logo.png?raw=true)
 ## [Geek\Circle](https://geek-circle.glitch.me/index)
-![](https://img.shields.io/packagist/stars/SwastikGowdaL/geek-circle?style=social) 
-
 This Project is brought to you by [Swastik](https://swastikgowdal.github.io/SwastikGowda-Portfolio/) and Vishwas.
 
 ## Geek Circle Intro
