@@ -11,7 +11,10 @@ Geek Circle is an online blogging website for geeks to post blogs just like medi
 * Clone the repo: git clone https://github.com/SwastikGowdaL/geek-circle.git
 * Download as zip , extract it and use the files.
 
-For more information refer our [Report](#)
+For more information refer -
+* [Overview of the project](https://www.instagram.com/tv/CPxrY-sAdl1/?utm_source=ig_web_copy_link)
+* [Explained video](https://www.facebook.com/100002915696511/videos/4059460257494457/)
+* [Report](#)
 
 
 ## Contributing
