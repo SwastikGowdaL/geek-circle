@@ -14,6 +14,7 @@ Geek Circle is an online blogging website for geeks to post blogs just like medi
 For more information refer -
 * [Overview of the project](https://www.instagram.com/tv/CPxrY-sAdl1/?utm_source=ig_web_copy_link)
 * [Explained video](https://www.facebook.com/100002915696511/videos/4059460257494457/)
+* [Geek Circle Admin Dashboard](https://app.appsmith.com/applications/60c4ebd03535574772b64031/pages/60c4ebd03535574772b64033) 
 * [Report](#)
 
 
