@@ -41,4 +41,4 @@ For more information refer -
 
 ## Copyright and license
 
-Code and documentation copyright 2021  Geek Circle, Inc. Code released under the MIT License. Docs released under Creative Commons.
+Code and documentation copyright 2021  Geek Circle, Inc. Code released under the MIT License.
