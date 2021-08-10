@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "60b707fc3330262dc0eba402"
+  },
+  "geek": [
+    "60b75d51be46fd1c10f1ff20",
+    "60b75ea5be46fd1c10f1ff23",
+    "60b76017be46fd1c10f1ff27",
+    "60b7612ebe46fd1c10f1ff2a",
+    "60b761ccbe46fd1c10f1ff2d",
+    "60b7623bbe46fd1c10f1ff2f",
+    "60ba109a7f013342007312b8"
+  ],
+  "technology": [
+    "60b75d51be46fd1c10f1ff20",
+    "60b75ee4be46fd1c10f1ff24",
+    "60b76017be46fd1c10f1ff27",
+    "60b7612ebe46fd1c10f1ff2a",
+    "60b7623bbe46fd1c10f1ff2f",
+    "60b9f9f4f614f34e904acbc9"
+  ],
+  "design": [
+    "60b75dcabe46fd1c10f1ff22",
+    "60b75ea5be46fd1c10f1ff23",
+    "60b76150be46fd1c10f1ff2b",
+    "60ba109a7f013342007312b8"
+  ],
+  "crypto": [
+    "60b75fc9be46fd1c10f1ff26",
+    "60b761fabe46fd1c10f1ff2e"
+  ],
+  "software": [
+    "60b75dcabe46fd1c10f1ff22",
+    "60b75ee4be46fd1c10f1ff24",
+    "60b75f60be46fd1c10f1ff25",
+    "60b75fc9be46fd1c10f1ff26",
+    "60b76060be46fd1c10f1ff28",
+    "60b7608ebe46fd1c10f1ff29",
+    "60b76185be46fd1c10f1ff2c",
+    "60b761fabe46fd1c10f1ff2e"
+  ],
+  "internet": [
+    "60b75dcabe46fd1c10f1ff22",
+    "60b75f60be46fd1c10f1ff25",
+    "60b75fc9be46fd1c10f1ff26",
+    "60b76060be46fd1c10f1ff28",
+    "60b7608ebe46fd1c10f1ff29",
+    "60b76150be46fd1c10f1ff2b",
+    "60b76185be46fd1c10f1ff2c"
+  ],
+  "computer": [
+    "60b75f60be46fd1c10f1ff25",
+    "60b761ccbe46fd1c10f1ff2d",
+    "60b9f9f4f614f34e904acbc9",
+    "60ba109a7f013342007312b8"
+  ],
+  "coding": [
+    "60b75d51be46fd1c10f1ff20",
+    "60b75ea5be46fd1c10f1ff23",
+    "60b75ee4be46fd1c10f1ff24",
+    "60b76017be46fd1c10f1ff27",
+    "60b76060be46fd1c10f1ff28",
+    "60b7608ebe46fd1c10f1ff29",
+    "60b7612ebe46fd1c10f1ff2a",
+    "60b76150be46fd1c10f1ff2b",
+    "60b76185be46fd1c10f1ff2c",
+    "60b761ccbe46fd1c10f1ff2d",
+    "60b761fabe46fd1c10f1ff2e",
+    "60b7623bbe46fd1c10f1ff2f",
+    "60b9f9f4f614f34e904acbc9"
+  ],
+  "__v": 0
+}]
